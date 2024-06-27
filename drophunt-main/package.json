@@ -1,0 +1,19 @@
+{
+	"name": "drophunt",
+	"scripts": {
+		"dev": "cd web && bun dev",
+		"web": "cd web && bun dev",
+		"app": "cd app && bun dev",
+		"api": "cd api && bun dev",
+		"build": "bun run --filter '*' build",
+		"hono:api": "cd hono && bun dev"
+	},
+	"workspaces": [
+		"api",
+		"app"
+	],
+	"prettier": {
+		"semi": false,
+		"useTabs": true
+	}
+}
